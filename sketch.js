@@ -1,13 +1,20 @@
+let rectangle;
+let pieces;
+//global vars
+
 function setup() {
-	createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(window.innerWidth - 10, window.innerHeight - 25);
+  rectangle = new board(100, 100, 50, 50, "#000000","#ff00ff","#ffffff","#aa00aa");
+  pieces = loadImage('imgs/pieces.png');
+}
+
+function draw() {
+
+  rectangle.disp();
+}
+
+function keyPressed() {
+  if (key == "e") {
+    background("#222222");
   }
-  
-  function draw() {
-	if (mouseIsPressed) {
-	  fill(0);
-	} else {
-	  stroke(255);
-	  fill(255);
-	}
-	ellipse(mouseX, mouseY, 80, 80);
-  }
+}
