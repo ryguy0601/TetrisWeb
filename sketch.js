@@ -5,7 +5,7 @@ let pieces;
 function setup() {
   createCanvas(window.innerWidth - 10, window.innerHeight - 25);
   rectangle = new board(100, 100, 50, 50, "#000000","#ff00ff","#ffffff","#aa00aa");
-  pieces = loadImage('imgs/pieces.png');
+  pieces = loadImage('imgs/bKing.png');
 }
 
 function draw() {
