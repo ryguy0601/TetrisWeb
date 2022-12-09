@@ -11,6 +11,7 @@ function setup() {
 function draw() {
 
   rectangle.disp();
+  image(pieces,0,0)
 }
 
 function keyPressed() {
